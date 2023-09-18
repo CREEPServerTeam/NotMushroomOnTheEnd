@@ -1,0 +1,30 @@
+name: NotMushroomOnTheEnd
+version: '0.0.1-SNAPSHOT'
+main: cn.qfys521.notmushroomontheend.NotMushroomOnTheEnd
+load: STARTUP
+author: qfys521
+
+commands:
+  addMushWhitelist:
+    description: 添加种植蘑菇白名单
+    usage: /<command> <player>
+    permission: NotMushroomOnTheEnd.add
+    permission-message: 你想干啥?
+  removeMushWhitelist:
+    description: 移出种植蘑菇白名单
+    usage: /<command> <player>
+    permission: NotMushroomOnTheEnd.remove
+    permission-message: 你想干啥?
+
+permissions:
+  NotMushroomOnTheEnd.*:
+    description: Gives access to all doorman commands //给予使用doorman所有命令的权限
+    children:
+      NotMushroomOnTheEnd.add: true
+      NotMushroomOnTheEnd.remove: true
+  NotMushroomOnTheEnd.add:
+    description: 添加种植蘑菇白名单
+    default: op
+  NotMushroomOnTheEnd.remove:
+      description: 移出种植蘑菇白名单
+      default: op

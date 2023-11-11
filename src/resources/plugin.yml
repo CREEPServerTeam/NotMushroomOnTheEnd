@@ -15,6 +15,17 @@ commands:
     usage: /<command> <player>
     permission: NotMushroomOnTheEnd.remove
     permission-message: 你想干啥?
+  NotMushroomOnTheEnd enable:
+    description: 启用本插件
+    usage: /<command>
+    permission: NotMushroomOnTheEnd.enable
+    permission-message: 你想干啥?
+  NotMushroomOnTheEnd disable:
+    description: 停用本插件
+    usage: /<command>
+    permission: NotMushroomOnTheEnd.enable
+    permission-message: 你想干啥?
+
 
 permissions:
   NotMushroomOnTheEnd.*:

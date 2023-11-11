@@ -37,5 +37,5 @@ permissions:
     description: 添加种植蘑菇白名单
     default: op
   NotMushroomOnTheEnd.remove:
-      description: 移出种植蘑菇白名单
-      default: op
+    description: 移出种植蘑菇白名单
+    default: op
